@@ -15,3 +15,8 @@ merge - make together the changes..
 master - v1.0.0 
 
 dev - branch 
+
+.ssh/id_pub 
+
+#see all available routers.
+php artisan route:list

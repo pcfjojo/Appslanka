@@ -12,15 +12,22 @@
 */
 
 // this return welcome blade file inside views folder
-Route::get('/', function () {
-    return view('pages.home');
-});
+// Route::get('/', function () {
+//     return view('pages.home', ['company' => 'Apps lanka software solutions',
+//     'tagline' => 'Let us make some innovative applications'
+    
+//     ]);
+// });
 
+Route::get('/', 'PageController@home');
+Route::get('contact', 'PageController@contact');
+Route::get('about', 'PageController@about');
+Route::get('teams', 'PageController@teams');
 
-Route::get('contact', function () {
-    return view('pages.contact');
-});
+// Route::get('contact', function () {
+//     return view('pages.contact');
+// });
 
-Route::get('about', function () {
-    return view('pages.about');
-});
+// Route::get('', function () {
+//     return view('pages.about');
+// });
