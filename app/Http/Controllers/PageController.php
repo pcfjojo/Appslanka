@@ -8,8 +8,14 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('pages.home', ['company' => 'Apps lanka software solutions',
-        'tagline' => 'Let us make some innovative applications'
+        date_default_timezone_set('Asia/Calcutta');
+        $hour = date('G');
+        $hour = 10;
+        return view('pages.home', 
+        [
+            'company' => 'Apps lanka software solutions',
+            'tagline' => 'Let us make some innovative applications',
+            'hour' => $hour    
         ]);
     }
 
@@ -22,6 +28,8 @@ class PageController extends Controller
     }
 
     public function teams(){
-        return view('pages.teams');
+        return view('pages.teams', [
+              "totalmembers" => 50  
+        ]);
     }
 }

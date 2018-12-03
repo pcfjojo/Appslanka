@@ -6,7 +6,7 @@
 @section('content')
     <div class="jumbotron jumbotron-fluid">
         <div class="container">       
-          <h1 class="display-4">Our Team</h1>
+          <h1 class="display-4">Our @if($totalmembers > 24) big @endif Team</h1>
           <p class="lead">Be in touch to have some fun and code help.</p>
         </div>
     </div>
