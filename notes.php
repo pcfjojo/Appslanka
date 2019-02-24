@@ -20,3 +20,20 @@ dev - branch
 
 #see all available routers.
 php artisan route:list
+
+
+#clear config cache 
+php artisan config:clear
+
+#create migration 
+php artisan make:migratione create_tablename_in_plural 
+
+#run migration 
+php artisan migrate 
+
+#fresh migration (not always)
+php artisan migrate:refresh
+php artisan migrate:reset
+
+# create new model 
+php artisan make:model ModelName(Post)
