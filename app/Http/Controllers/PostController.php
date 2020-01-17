@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -13,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+       $posts =  Post::all(); // paginate
+       return view('post.index', compact('posts'));
     }
 
     /**
@@ -23,7 +26,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post.create');
     }
 
     /**
@@ -34,7 +37,10 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //create new article
+        Post::create($request->all());
+        return redirect()->route('posts.index')
+        ->with("success", "Post has been created");
     }
 
     /**

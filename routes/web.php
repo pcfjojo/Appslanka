@@ -15,7 +15,7 @@
 // Route::get('/', function () {
 //     return view('pages.home', ['company' => 'Apps lanka software solutions',
 //     'tagline' => 'Let us make some innovative applications'
-    
+
 //     ]);
 // });
 
@@ -23,6 +23,9 @@ Route::get('/', 'PageController@home');
 Route::get('contact', 'PageController@contact');
 Route::get('about', 'PageController@about');
 Route::get('teams', 'PageController@teams');
+
+Route::resource('posts', 'PostController');
+
 
 // Route::get('contact', function () {
 //     return view('pages.contact');

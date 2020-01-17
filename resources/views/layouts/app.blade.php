@@ -6,9 +6,11 @@
 
         <title>Appslanka - @yield('title')</title>
 
+        <link href="{{ asset('css/app.css')}}" rel="stylesheet"
+        type="text/css">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body >
         <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
@@ -26,20 +28,32 @@
                         <li class="nav-item">
                         <a class="nav-link" href="teams">Our Team</a>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                            aria-expanded="false">Posts</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="/posts">All Posts</a>
+                              <a class="dropdown-item" href="/posts/create">new post</a>
+                            </div>
+                        </li>
                     </ul>
                     <span class="navbar-text">
                         Mail us - info@appslanka.lk
                     </span>
                 </div>
-        </nav>         
+        </nav>
 
 
         <div class="container mt-4">
-                @yield('content')
+            @yield('content')
         </div>
 
         <nav class="container navbar  navbar-light bg-light">
                 <a class="navbar-brand" href="#">All right reserved appslanka software solutions</a>
         </nav>
+
+        <script src="{{ asset('js/app.js')}}"></script>
     </body>
 </html>

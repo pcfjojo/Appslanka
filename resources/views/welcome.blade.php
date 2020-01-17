@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Apps lanka</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -35,10 +35,10 @@
                     <div class="links">
                     <a href="https://appslanka.lk">our website</a>
                     <a href="/home"></a>
-                </div> 
-                  </div>
+                </div>
+            </div>
 
-                
+
             </div>
         </div>
 
@@ -48,7 +48,7 @@
                   <a class="nav-link" href="about">About us</a>
                   <a class="nav-link" href="contact">Contact Us</a>
                 </li>
-               
+
         </ul>
     </body>
 </html>
