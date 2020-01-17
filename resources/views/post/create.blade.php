@@ -25,6 +25,12 @@
                 </textarea>
             </div>
 
+            <div class="form-group">
+                <label for="exampleInputEmail1">Image Url</label>
+                <input type="url" class="form-control" name="image"
+                id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
             <button type="submit" class="btn btn-primary">Save</button>
 
 

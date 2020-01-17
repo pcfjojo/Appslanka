@@ -50,7 +50,7 @@
             @yield('content')
         </div>
 
-        <nav class="container navbar  navbar-light bg-light">
+        <nav class="container navbar  navbar-light bg-light fixed-bottom">
                 <a class="navbar-brand" href="#">All right reserved appslanka software solutions</a>
         </nav>
 
